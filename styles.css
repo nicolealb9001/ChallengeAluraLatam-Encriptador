@@ -1,0 +1,193 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+body {
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+.terminal {
+    position: relative;
+    width: 960px;
+    height: 550px;
+    border-radius: 6px;
+    padding-top: 45px;
+    margin-top: 8px;
+    overflow: hidden;
+    background-color: rgb(15, 15, 16);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+}
+.terminal::before {
+    content: "\2022 \2022 \2022";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background: rgb(58, 58, 58);
+    color: #c2c3c4;
+    width: 100%;
+    font-size: 2rem;
+    line-height: 0;
+    padding: 14px 0;
+    text-indent: 4px;
+}
+.terminal pre {
+    display: flex;
+    flex-direction: row;
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+    color: lime;
+    padding: 0 1rem 1rem;
+    margin: 0;
+}
+
+.terminal pre p {
+    white-space:nowrap;
+    overflow: hidden;
+}
+
+.terminal pre:nth-child(1) p {
+    font-size: xx-large;
+    width: 5.9em;
+    animation: typing  0.5s steps(30, end);
+}
+
+span {
+    display: block;
+    padding: 1px 0px;
+    background-color: lime;
+    animation: blink 0.8s infinite;
+}
+
+
+@keyframes typing  {
+    from {
+    width: 0;
+    }
+}
+
+@keyframes blink {
+    to {
+    opacity: 0.3;
+    }
+}
+
+.left{
+    float: left;
+    width: 60%;
+    height: 65%;
+}
+
+::placeholder { color: green; }
+
+.text-imput{
+    float: left;
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 2%;
+    width: 80%;
+    height: 60%;
+    color: lime;
+    font-size: 20px;
+    font-family:  SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.right{
+    float: right;
+    margin-right: 5%;
+    border-radius: 5px;
+    width: 30%;
+    height: 60%;
+    background: rgb(58, 58, 58);
+}
+
+#texto{
+    margin-top: 30%;
+    margin-left: 7%;
+    margin-right: 5%;
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+    font-size: larger;
+    text-align: center;
+}
+
+#texto2{
+    float: left;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 10%;
+    color:green;
+    width:80%;
+    height: 60%;
+    border: none;
+    font-size: 15px;
+    background: none;
+}
+.btn-left{
+    float: left;
+    width: 70%;
+    height: auto;
+    margin-bottom: 10%;
+}
+
+.ad{
+    margin-left: 5%;
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+    color: green;
+    margin-bottom: 5%;
+}
+
+
+#btn-encriptar{
+    padding: 24px;
+    width: 40%;
+    height: 60%;
+    border-radius: 5px;
+    margin-left: 5%;
+    background: rgb(58, 58, 58);;
+    color: lime;
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+}
+
+#btn-desencriptar{
+    padding: 24px;
+    width: 40%;
+    height: 20%;
+    border-radius: 5px;
+    margin-left: 5%;
+    background: rgb(58, 58, 58);;
+    color: lime;
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+}
+
+#copiar{
+    margin-left: 33%;
+    margin-top: 90%;
+    padding: 24px;
+    height: 10%;
+    width: 40%;
+    background: rgb(58, 58, 58);;
+    color: lime;
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+    display: none;
+}
