@@ -202,6 +202,7 @@ span {
         background: rgb(58, 58, 58);;
         color: lime;
         font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+        font-size: smaller;
     }
     #btn-desencriptar{
         padding: 16px;
@@ -212,6 +213,7 @@ span {
         background: rgb(58, 58, 58);;
         color: lime;
         font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+        font-size: smaller;
     }
 
     #texto{
